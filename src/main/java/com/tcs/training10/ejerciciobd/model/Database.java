@@ -21,7 +21,7 @@ public class Database {
   protected static boolean Connect() {
 
     try {
-      Class.forName("com.mysql.jdbc.Driver");
+      Class.forName("com.mysql.cj.jdbc.Driver");
       connection = getConnection("jdbc:mysql://localhost:3306/personal?serverTimezone=UTC", "root",
           "");
 
