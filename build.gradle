@@ -8,11 +8,12 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenCentral()
+    mavenLocal()
+    jcenter()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    implementation 'mysql:mysql-connector-java:8.0.16'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '5.1.22'
     implementation 'com.jtattoo:JTattoo:1.6.11'
 }
